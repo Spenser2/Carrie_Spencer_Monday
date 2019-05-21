@@ -1,13 +1,15 @@
-jQuery(document).ready(function() {
-  jQuery("h1").click(function() {
-    alert("This is a header.");
+$(document).ready(function() {
+  $(".clickable").click(function() {
+  $("#walrus-showing").slideToggle("slow");
+  $("#walrus-hidden").slideToggle("slow");
   });
 
-  jQuery("p").click(function() {
-    alert("This is a paragraph.");
+  $(document).ready(function() {
+    $("p").click(function(){
+    $("p").slideUp();
+
+    $("p").slideDown();
   });
 
-  jQuery("img").click(function() {
-    alert("This is an image.");
-  });
+ });
 });
